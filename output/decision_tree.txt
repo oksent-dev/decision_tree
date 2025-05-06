@@ -1,0 +1,416 @@
+Attribute a6
+├── low ➔ Decision: unacc
+├── med ➔ Attribute a4
+│   ├── 2 ➔ Decision: unacc
+│   ├── 4 ➔ Attribute a1
+│   │   ├── vhigh ➔ Attribute a2
+│   │   │   ├── vhigh ➔ Decision: unacc
+│   │   │   ├── high ➔ Decision: unacc
+│   │   │   ├── med ➔ Attribute a5
+│   │   │   │   ├── small ➔ Decision: unacc
+│   │   │   │   ├── med ➔ Attribute a3
+│   │   │   │   │   ├── 2 ➔ Decision: unacc
+│   │   │   │   │   ├── 3 ➔ Decision: unacc
+│   │   │   │   │   ├── 4 ➔ Decision: acc
+│   │   │   │   │   └── 5more ➔ Decision: acc
+│   │   │   │   └── big ➔ Decision: acc
+│   │   │   └── low ➔ Attribute a5
+│   │   │       ├── small ➔ Decision: unacc
+│   │   │       ├── med ➔ Attribute a3
+│   │   │       │   ├── 2 ➔ Decision: unacc
+│   │   │       │   ├── 3 ➔ Decision: unacc
+│   │   │       │   ├── 4 ➔ Decision: acc
+│   │   │       │   └── 5more ➔ Decision: acc
+│   │   │       └── big ➔ Decision: acc
+│   │   ├── high ➔ Attribute a2
+│   │   │   ├── vhigh ➔ Decision: unacc
+│   │   │   ├── high ➔ Attribute a5
+│   │   │   │   ├── small ➔ Decision: unacc
+│   │   │   │   ├── med ➔ Attribute a3
+│   │   │   │   │   ├── 2 ➔ Decision: unacc
+│   │   │   │   │   ├── 3 ➔ Decision: unacc
+│   │   │   │   │   ├── 4 ➔ Decision: acc
+│   │   │   │   │   └── 5more ➔ Decision: acc
+│   │   │   │   └── big ➔ Decision: acc
+│   │   │   ├── med ➔ Attribute a5
+│   │   │   │   ├── small ➔ Decision: unacc
+│   │   │   │   ├── med ➔ Attribute a3
+│   │   │   │   │   ├── 2 ➔ Decision: unacc
+│   │   │   │   │   ├── 3 ➔ Decision: unacc
+│   │   │   │   │   ├── 4 ➔ Decision: acc
+│   │   │   │   │   └── 5more ➔ Decision: acc
+│   │   │   │   └── big ➔ Decision: acc
+│   │   │   └── low ➔ Attribute a5
+│   │   │       ├── small ➔ Decision: unacc
+│   │   │       ├── med ➔ Attribute a3
+│   │   │       │   ├── 2 ➔ Decision: unacc
+│   │   │       │   ├── 3 ➔ Decision: unacc
+│   │   │       │   ├── 4 ➔ Decision: acc
+│   │   │       │   └── 5more ➔ Decision: acc
+│   │   │       └── big ➔ Decision: acc
+│   │   ├── med ➔ Attribute a2
+│   │   │   ├── vhigh ➔ Attribute a5
+│   │   │   │   ├── small ➔ Decision: unacc
+│   │   │   │   ├── med ➔ Attribute a3
+│   │   │   │   │   ├── 2 ➔ Decision: unacc
+│   │   │   │   │   ├── 3 ➔ Decision: unacc
+│   │   │   │   │   ├── 4 ➔ Decision: acc
+│   │   │   │   │   └── 5more ➔ Decision: acc
+│   │   │   │   └── big ➔ Decision: acc
+│   │   │   ├── high ➔ Attribute a5
+│   │   │   │   ├── small ➔ Decision: unacc
+│   │   │   │   ├── med ➔ Attribute a3
+│   │   │   │   │   ├── 2 ➔ Decision: unacc
+│   │   │   │   │   ├── 3 ➔ Decision: unacc
+│   │   │   │   │   ├── 4 ➔ Decision: acc
+│   │   │   │   │   └── 5more ➔ Decision: acc
+│   │   │   │   └── big ➔ Decision: acc
+│   │   │   ├── med ➔ Decision: acc
+│   │   │   └── low ➔ Attribute a5
+│   │   │       ├── small ➔ Decision: acc
+│   │   │       ├── med ➔ Attribute a3
+│   │   │       │   ├── 2 ➔ Decision: acc
+│   │   │       │   ├── 3 ➔ Decision: acc
+│   │   │       │   ├── 4 ➔ Decision: good
+│   │   │       │   └── 5more ➔ Decision: good
+│   │   │       └── big ➔ Decision: good
+│   │   └── low ➔ Attribute a2
+│   │       ├── vhigh ➔ Attribute a5
+│   │       │   ├── small ➔ Decision: unacc
+│   │       │   ├── med ➔ Attribute a3
+│   │       │   │   ├── 2 ➔ Decision: unacc
+│   │       │   │   ├── 3 ➔ Decision: unacc
+│   │       │   │   ├── 4 ➔ Decision: acc
+│   │       │   │   └── 5more ➔ Decision: acc
+│   │       │   └── big ➔ Decision: acc
+│   │       ├── high ➔ Decision: acc
+│   │       ├── med ➔ Attribute a5
+│   │       │   ├── small ➔ Decision: acc
+│   │       │   ├── med ➔ Attribute a3
+│   │       │   │   ├── 2 ➔ Decision: acc
+│   │       │   │   ├── 3 ➔ Decision: acc
+│   │       │   │   ├── 4 ➔ Decision: good
+│   │       │   │   └── 5more ➔ Decision: good
+│   │       │   └── big ➔ Decision: good
+│   │       └── low ➔ Attribute a5
+│   │           ├── small ➔ Decision: acc
+│   │           ├── med ➔ Attribute a3
+│   │           │   ├── 2 ➔ Decision: acc
+│   │           │   ├── 3 ➔ Decision: acc
+│   │           │   ├── 4 ➔ Decision: good
+│   │           │   └── 5more ➔ Decision: good
+│   │           └── big ➔ Decision: good
+│   └── more ➔ Attribute a1
+│       ├── vhigh ➔ Attribute a2
+│       │   ├── vhigh ➔ Decision: unacc
+│       │   ├── high ➔ Decision: unacc
+│       │   ├── med ➔ Attribute a5
+│       │   │   ├── small ➔ Decision: unacc
+│       │   │   ├── med ➔ Attribute a3
+│       │   │   │   ├── 2 ➔ Decision: unacc
+│       │   │   │   ├── 3 ➔ Decision: acc
+│       │   │   │   ├── 4 ➔ Decision: acc
+│       │   │   │   └── 5more ➔ Decision: acc
+│       │   │   └── big ➔ Decision: acc
+│       │   └── low ➔ Attribute a5
+│       │       ├── small ➔ Decision: unacc
+│       │       ├── med ➔ Attribute a3
+│       │       │   ├── 2 ➔ Decision: unacc
+│       │       │   ├── 3 ➔ Decision: acc
+│       │       │   ├── 4 ➔ Decision: acc
+│       │       │   └── 5more ➔ Decision: acc
+│       │       └── big ➔ Decision: acc
+│       ├── high ➔ Attribute a2
+│       │   ├── vhigh ➔ Decision: unacc
+│       │   ├── high ➔ Attribute a5
+│       │   │   ├── small ➔ Decision: unacc
+│       │   │   ├── med ➔ Attribute a3
+│       │   │   │   ├── 2 ➔ Decision: unacc
+│       │   │   │   ├── 3 ➔ Decision: acc
+│       │   │   │   ├── 4 ➔ Decision: acc
+│       │   │   │   └── 5more ➔ Decision: acc
+│       │   │   └── big ➔ Decision: acc
+│       │   ├── med ➔ Attribute a5
+│       │   │   ├── small ➔ Decision: unacc
+│       │   │   ├── med ➔ Attribute a3
+│       │   │   │   ├── 2 ➔ Decision: unacc
+│       │   │   │   ├── 3 ➔ Decision: acc
+│       │   │   │   ├── 4 ➔ Decision: acc
+│       │   │   │   └── 5more ➔ Decision: acc
+│       │   │   └── big ➔ Decision: acc
+│       │   └── low ➔ Attribute a5
+│       │       ├── small ➔ Decision: unacc
+│       │       ├── med ➔ Attribute a3
+│       │       │   ├── 2 ➔ Decision: unacc
+│       │       │   ├── 3 ➔ Decision: acc
+│       │       │   ├── 4 ➔ Decision: acc
+│       │       │   └── 5more ➔ Decision: acc
+│       │       └── big ➔ Decision: acc
+│       ├── med ➔ Attribute a2
+│       │   ├── vhigh ➔ Attribute a5
+│       │   │   ├── small ➔ Decision: unacc
+│       │   │   ├── med ➔ Attribute a3
+│       │   │   │   ├── 2 ➔ Decision: unacc
+│       │   │   │   ├── 3 ➔ Decision: acc
+│       │   │   │   ├── 4 ➔ Decision: acc
+│       │   │   │   └── 5more ➔ Decision: acc
+│       │   │   └── big ➔ Decision: acc
+│       │   ├── high ➔ Attribute a5
+│       │   │   ├── small ➔ Decision: unacc
+│       │   │   ├── med ➔ Attribute a3
+│       │   │   │   ├── 2 ➔ Decision: unacc
+│       │   │   │   ├── 3 ➔ Decision: acc
+│       │   │   │   ├── 4 ➔ Decision: acc
+│       │   │   │   └── 5more ➔ Decision: acc
+│       │   │   └── big ➔ Decision: acc
+│       │   ├── med ➔ Attribute a5
+│       │   │   ├── small ➔ Attribute a3
+│       │   │   │   ├── 2 ➔ Decision: unacc
+│       │   │   │   ├── 3 ➔ Decision: acc
+│       │   │   │   ├── 4 ➔ Decision: acc
+│       │   │   │   └── 5more ➔ Decision: acc
+│       │   │   ├── med ➔ Decision: acc
+│       │   │   └── big ➔ Decision: acc
+│       │   └── low ➔ Attribute a5
+│       │       ├── small ➔ Attribute a3
+│       │       │   ├── 2 ➔ Decision: unacc
+│       │       │   ├── 3 ➔ Decision: acc
+│       │       │   ├── 4 ➔ Decision: acc
+│       │       │   └── 5more ➔ Decision: acc
+│       │       ├── med ➔ Attribute a3
+│       │       │   ├── 2 ➔ Decision: acc
+│       │       │   ├── 3 ➔ Decision: good
+│       │       │   ├── 4 ➔ Decision: good
+│       │       │   └── 5more ➔ Decision: good
+│       │       └── big ➔ Decision: good
+│       └── low ➔ Attribute a2
+│           ├── vhigh ➔ Attribute a5
+│           │   ├── small ➔ Decision: unacc
+│           │   ├── med ➔ Attribute a3
+│           │   │   ├── 2 ➔ Decision: unacc
+│           │   │   ├── 3 ➔ Decision: acc
+│           │   │   ├── 4 ➔ Decision: acc
+│           │   │   └── 5more ➔ Decision: acc
+│           │   └── big ➔ Decision: acc
+│           ├── high ➔ Attribute a5
+│           │   ├── small ➔ Attribute a3
+│           │   │   ├── 2 ➔ Decision: unacc
+│           │   │   ├── 3 ➔ Decision: acc
+│           │   │   ├── 4 ➔ Decision: acc
+│           │   │   └── 5more ➔ Decision: acc
+│           │   ├── med ➔ Decision: acc
+│           │   └── big ➔ Decision: acc
+│           ├── med ➔ Attribute a5
+│           │   ├── small ➔ Attribute a3
+│           │   │   ├── 2 ➔ Decision: unacc
+│           │   │   ├── 3 ➔ Decision: acc
+│           │   │   ├── 4 ➔ Decision: acc
+│           │   │   └── 5more ➔ Decision: acc
+│           │   ├── med ➔ Attribute a3
+│           │   │   ├── 2 ➔ Decision: acc
+│           │   │   ├── 3 ➔ Decision: good
+│           │   │   ├── 4 ➔ Decision: good
+│           │   │   └── 5more ➔ Decision: good
+│           │   └── big ➔ Decision: good
+│           └── low ➔ Attribute a5
+│               ├── small ➔ Attribute a3
+│               │   ├── 2 ➔ Decision: unacc
+│               │   ├── 3 ➔ Decision: acc
+│               │   ├── 4 ➔ Decision: acc
+│               │   └── 5more ➔ Decision: acc
+│               ├── med ➔ Attribute a3
+│               │   ├── 2 ➔ Decision: acc
+│               │   ├── 3 ➔ Decision: good
+│               │   ├── 4 ➔ Decision: good
+│               │   └── 5more ➔ Decision: good
+│               └── big ➔ Decision: good
+└── high ➔ Attribute a4
+    ├── 2 ➔ Decision: unacc
+    ├── 4 ➔ Attribute a1
+    │   ├── vhigh ➔ Attribute a2
+    │   │   ├── vhigh ➔ Decision: unacc
+    │   │   ├── high ➔ Decision: unacc
+    │   │   ├── med ➔ Decision: acc
+    │   │   └── low ➔ Decision: acc
+    │   ├── high ➔ Attribute a2
+    │   │   ├── vhigh ➔ Decision: unacc
+    │   │   ├── high ➔ Decision: acc
+    │   │   ├── med ➔ Decision: acc
+    │   │   └── low ➔ Decision: acc
+    │   ├── med ➔ Attribute a2
+    │   │   ├── vhigh ➔ Decision: acc
+    │   │   ├── high ➔ Decision: acc
+    │   │   ├── med ➔ Attribute a5
+    │   │   │   ├── small ➔ Decision: acc
+    │   │   │   ├── med ➔ Attribute a3
+    │   │   │   │   ├── 2 ➔ Decision: acc
+    │   │   │   │   ├── 3 ➔ Decision: acc
+    │   │   │   │   ├── 4 ➔ Decision: vgood
+    │   │   │   │   └── 5more ➔ Decision: vgood
+    │   │   │   └── big ➔ Decision: vgood
+    │   │   └── low ➔ Attribute a5
+    │   │       ├── small ➔ Decision: good
+    │   │       ├── med ➔ Attribute a3
+    │   │       │   ├── 2 ➔ Decision: good
+    │   │       │   ├── 3 ➔ Decision: good
+    │   │       │   ├── 4 ➔ Decision: vgood
+    │   │       │   └── 5more ➔ Decision: vgood
+    │   │       └── big ➔ Decision: vgood
+    │   └── low ➔ Attribute a2
+    │       ├── vhigh ➔ Decision: acc
+    │       ├── high ➔ Attribute a5
+    │       │   ├── small ➔ Decision: acc
+    │       │   ├── med ➔ Attribute a3
+    │       │   │   ├── 2 ➔ Decision: acc
+    │       │   │   ├── 3 ➔ Decision: acc
+    │       │   │   ├── 4 ➔ Decision: vgood
+    │       │   │   └── 5more ➔ Decision: vgood
+    │       │   └── big ➔ Decision: vgood
+    │       ├── med ➔ Attribute a5
+    │       │   ├── small ➔ Decision: good
+    │       │   ├── med ➔ Attribute a3
+    │       │   │   ├── 2 ➔ Decision: good
+    │       │   │   ├── 3 ➔ Decision: good
+    │       │   │   ├── 4 ➔ Decision: vgood
+    │       │   │   └── 5more ➔ Decision: vgood
+    │       │   └── big ➔ Decision: vgood
+    │       └── low ➔ Attribute a5
+    │           ├── small ➔ Decision: good
+    │           ├── med ➔ Attribute a3
+    │           │   ├── 2 ➔ Decision: good
+    │           │   ├── 3 ➔ Decision: good
+    │           │   ├── 4 ➔ Decision: vgood
+    │           │   └── 5more ➔ Decision: vgood
+    │           └── big ➔ Decision: vgood
+    └── more ➔ Attribute a1
+        ├── vhigh ➔ Attribute a2
+        │   ├── vhigh ➔ Decision: unacc
+        │   ├── high ➔ Decision: unacc
+        │   ├── med ➔ Attribute a5
+        │   │   ├── small ➔ Attribute a3
+        │   │   │   ├── 2 ➔ Decision: unacc
+        │   │   │   ├── 3 ➔ Decision: acc
+        │   │   │   ├── 4 ➔ Decision: acc
+        │   │   │   └── 5more ➔ Decision: acc
+        │   │   ├── med ➔ Decision: acc
+        │   │   └── big ➔ Decision: acc
+        │   └── low ➔ Attribute a5
+        │       ├── small ➔ Attribute a3
+        │       │   ├── 2 ➔ Decision: unacc
+        │       │   ├── 3 ➔ Decision: acc
+        │       │   ├── 4 ➔ Decision: acc
+        │       │   └── 5more ➔ Decision: acc
+        │       ├── med ➔ Decision: acc
+        │       └── big ➔ Decision: acc
+        ├── high ➔ Attribute a2
+        │   ├── vhigh ➔ Decision: unacc
+        │   ├── high ➔ Attribute a5
+        │   │   ├── small ➔ Attribute a3
+        │   │   │   ├── 2 ➔ Decision: unacc
+        │   │   │   ├── 3 ➔ Decision: acc
+        │   │   │   ├── 4 ➔ Decision: acc
+        │   │   │   └── 5more ➔ Decision: acc
+        │   │   ├── med ➔ Decision: acc
+        │   │   └── big ➔ Decision: acc
+        │   ├── med ➔ Attribute a5
+        │   │   ├── small ➔ Attribute a3
+        │   │   │   ├── 2 ➔ Decision: unacc
+        │   │   │   ├── 3 ➔ Decision: acc
+        │   │   │   ├── 4 ➔ Decision: acc
+        │   │   │   └── 5more ➔ Decision: acc
+        │   │   ├── med ➔ Decision: acc
+        │   │   └── big ➔ Decision: acc
+        │   └── low ➔ Attribute a5
+        │       ├── small ➔ Attribute a3
+        │       │   ├── 2 ➔ Decision: unacc
+        │       │   ├── 3 ➔ Decision: acc
+        │       │   ├── 4 ➔ Decision: acc
+        │       │   └── 5more ➔ Decision: acc
+        │       ├── med ➔ Decision: acc
+        │       └── big ➔ Decision: acc
+        ├── med ➔ Attribute a2
+        │   ├── vhigh ➔ Attribute a5
+        │   │   ├── small ➔ Attribute a3
+        │   │   │   ├── 2 ➔ Decision: unacc
+        │   │   │   ├── 3 ➔ Decision: acc
+        │   │   │   ├── 4 ➔ Decision: acc
+        │   │   │   └── 5more ➔ Decision: acc
+        │   │   ├── med ➔ Decision: acc
+        │   │   └── big ➔ Decision: acc
+        │   ├── high ➔ Attribute a5
+        │   │   ├── small ➔ Attribute a3
+        │   │   │   ├── 2 ➔ Decision: unacc
+        │   │   │   ├── 3 ➔ Decision: acc
+        │   │   │   ├── 4 ➔ Decision: acc
+        │   │   │   └── 5more ➔ Decision: acc
+        │   │   ├── med ➔ Decision: acc
+        │   │   └── big ➔ Decision: acc
+        │   ├── med ➔ Attribute a5
+        │   │   ├── small ➔ Attribute a3
+        │   │   │   ├── 2 ➔ Decision: unacc
+        │   │   │   ├── 3 ➔ Decision: acc
+        │   │   │   ├── 4 ➔ Decision: acc
+        │   │   │   └── 5more ➔ Decision: acc
+        │   │   ├── med ➔ Attribute a3
+        │   │   │   ├── 2 ➔ Decision: acc
+        │   │   │   ├── 3 ➔ Decision: vgood
+        │   │   │   ├── 4 ➔ Decision: vgood
+        │   │   │   └── 5more ➔ Decision: vgood
+        │   │   └── big ➔ Decision: vgood
+        │   └── low ➔ Attribute a5
+        │       ├── small ➔ Attribute a3
+        │       │   ├── 2 ➔ Decision: unacc
+        │       │   ├── 3 ➔ Decision: good
+        │       │   ├── 4 ➔ Decision: good
+        │       │   └── 5more ➔ Decision: good
+        │       ├── med ➔ Attribute a3
+        │       │   ├── 2 ➔ Decision: good
+        │       │   ├── 3 ➔ Decision: vgood
+        │       │   ├── 4 ➔ Decision: vgood
+        │       │   └── 5more ➔ Decision: vgood
+        │       └── big ➔ Decision: vgood
+        └── low ➔ Attribute a2
+            ├── vhigh ➔ Attribute a5
+            │   ├── small ➔ Attribute a3
+            │   │   ├── 2 ➔ Decision: unacc
+            │   │   ├── 3 ➔ Decision: acc
+            │   │   ├── 4 ➔ Decision: acc
+            │   │   └── 5more ➔ Decision: acc
+            │   ├── med ➔ Decision: acc
+            │   └── big ➔ Decision: acc
+            ├── high ➔ Attribute a5
+            │   ├── small ➔ Attribute a3
+            │   │   ├── 2 ➔ Decision: unacc
+            │   │   ├── 3 ➔ Decision: acc
+            │   │   ├── 4 ➔ Decision: acc
+            │   │   └── 5more ➔ Decision: acc
+            │   ├── med ➔ Attribute a3
+            │   │   ├── 2 ➔ Decision: acc
+            │   │   ├── 3 ➔ Decision: vgood
+            │   │   ├── 4 ➔ Decision: vgood
+            │   │   └── 5more ➔ Decision: vgood
+            │   └── big ➔ Decision: vgood
+            ├── med ➔ Attribute a5
+            │   ├── small ➔ Attribute a3
+            │   │   ├── 2 ➔ Decision: unacc
+            │   │   ├── 3 ➔ Decision: good
+            │   │   ├── 4 ➔ Decision: good
+            │   │   └── 5more ➔ Decision: good
+            │   ├── med ➔ Attribute a3
+            │   │   ├── 2 ➔ Decision: good
+            │   │   ├── 3 ➔ Decision: vgood
+            │   │   ├── 4 ➔ Decision: vgood
+            │   │   └── 5more ➔ Decision: vgood
+            │   └── big ➔ Decision: vgood
+            └── low ➔ Attribute a5
+                ├── small ➔ Attribute a3
+                │   ├── 2 ➔ Decision: unacc
+                │   ├── 3 ➔ Decision: good
+                │   ├── 4 ➔ Decision: good
+                │   └── 5more ➔ Decision: good
+                ├── med ➔ Attribute a3
+                │   ├── 2 ➔ Decision: good
+                │   ├── 3 ➔ Decision: vgood
+                │   ├── 4 ➔ Decision: vgood
+                │   └── 5more ➔ Decision: vgood
+                └── big ➔ Decision: vgood
