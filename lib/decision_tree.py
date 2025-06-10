@@ -125,6 +125,12 @@ class DecisionTree:
                 if gain > best_gain:
                     best_attr, best_gain = attr, gain
 
+        if best_attr is None:
+            majority = max(set(decisions), key=decisions.count)
+            return DecisionTreeNode(
+                name=f"Decision: {majority}", decision=majority, parent=parent
+            )
+
         node = DecisionTreeNode(
             name=f"Attribute a{best_attr + 1}", attribute_index=best_attr, parent=parent
         )
@@ -176,7 +182,7 @@ class DecisionTree:
         return self._calculate_entropy_from_counts(value_counts)
 
     def calculate_gain_ratio(self, attribute_index: int) -> float:
-        """Calculate gain ratio for an attribute"""
+        """Calculate gain ratio for an attribute. Used for normalization of information gain."""
         information_gain = self.calculate_information_gain(attribute_index)
         split_info = self.calculate_split_information(attribute_index)
 

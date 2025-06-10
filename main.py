@@ -3,7 +3,7 @@ from lib.decision_tree import DecisionTree
 
 def main():
     dt = DecisionTree()
-    dt.load_data("data/car.data")
+    dt.load_data("data/gielda.txt")
 
     print("Unique values count:")
     for attr, count in dt.unique_attributes_values.items():
